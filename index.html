@@ -4,11 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>DC presentation</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/moon.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -25,8 +25,73 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section><h2>Second generation - 2G</h2></section>
+				<section><h3>Commercially launched on the GSM standard in <span style="color: #f57c00">Finland</span> by <span style="color: #f57c00">Radiolinja</span> in <span style="color: #f57c00">1991</span></h3></section>
+				<section>
+					<section id="fragments">
+						<h2>Advantages over 1 G</h2>
+						<p class="fragment"><b>1. Communication through digital encryption</b></p><br>
+						<p class="fragment"><b>2. Greater wireless penetration levels</b></p><br>
+						<p class="fragment"><b>3. Introduced data services for mobile</b></p><br>
+					</section>
+				</section>
+				<section>
+					<section><h2>Systems evolved</h2></section>
+					<section style="font-size: 60px">D-AMPS</section>
+					<section style="font-size: 60px">GSM</section>
+					<section style="font-size: 60px">IS-95</section>
+				</section>
+				<section>
+					<section><h2>D-AMPS</h2><br>(Digital-Advanced Mobile Phone System)</section>
+					<section>Employs the same 30 kHz channel spacing and frequency bands (824-849 and 869-894 MHz) as AMPS</section>
+					<section>Each voice channel is digitezed using complex PCM and compression techniques</section>
+					<section><img src="./images/damps.png"></section>
+				</section>
+				<section>
+					<section><h2>GSM</h2><br>(Global System for Mobile Communication</section>
+					<section><img src="./images/gsm.png"></section>
+					<section>GSM standard originally described a digital, circuit-switched network optimized for <span style="color:#f57c00">Full Duplex Voice Telephony</span></section>
+					<section><h3>Bands</h3>
+						<ul>
+							<li>Uses two bands for Duplex communication</li>
+							<li>Each being 25 MHz in width</li>
+							<li>Each further divided into 124 channels of 200 kHz</li>
+						</ul>
+					</section>
+					<section><img src="./images/gsm2.png"></section>
+					<section><h3>Transmission</h3><img src="./images/gsm1.png"></section>
+					<section>Data rate: (1/120ms)x26x8x156.25 = 270.8 kbps</section>
+				</section>
+				<section>
+					<section><h2>IS-95</h2>(Interim standard)<br>cdmaOne</section>
+					<section data-background="./images/qualcomm.png"><br><br><br><br><br><br>IS-95 is the first CDMA based digital cellular technology</section>
+					<section>Code Division Multiple Access allows several radios to share the same Frequencies</section>
+					<section><h3>Bands</h3>
+						<ul>
+							<li>2 bands for Duplex communication</li>
+							<li>ISM 800-MHz bands or ISM 1900-MHz bands</li>
+							<li>Each band is divided into 20 channels of 1.228 MHz</li>
+							<li>10 channels for each service provider</li>
+							<li>Each IS-95 channel is equivalent to 41 AMPS channels</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Transmission</h2>
+					</section>
+					<section><h3>Forward Transmission</h3>Base to Mobile<img src="./images/is2.png"></section>
+					<section><h3>Reverse Transmission</h3>Mobile to Base<img src="./images/is1.png"></section>
+					<section>
+						<h3>synchronization</h3>
+						<ul>
+							<li>All base channels need to be synchronized to use CDMA</li>
+							<li>To provide synchronization, bases use the services of a satellite system (GPS)</li>
+						</ul>
+					</section>
+					<section>Frequency reuse factor is 1 as the interferense from the neighboring cells cannot affect CDMA transmission
+					</section>
+					<section><h3>soft handoff</h3></section>
+				</section>
+				<section data-background="./images/thankyou.gif"></section>
 			</div>
 		</div>
 
